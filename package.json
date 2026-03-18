@@ -1,0 +1,51 @@
+{
+  "name": "testrail-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP Server for TestRail API integration with GitHub Copilot",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "testrail-mcp-server": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    ".env.example"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build",
+    "start": "node dist/index.js",
+    "dev": "tsc --watch"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.5.0",
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "typescript": "^5.3.0"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "testrail",
+    "testing",
+    "api",
+    "github-copilot",
+    "test-management",
+    "qa",
+    "test-automation"
+  ],
+  "author": "Chandra C <chandrashekhar.chanagonda@moduscreate.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hash-chandra/testrail-mcp-server.git"
+  },
+  "homepage": "https://github.com/hash-chandra/testrail-mcp-server#readme",
+  "bugs": {
+    "url": "https://github.com/hash-chandra/testrail-mcp-server/issues"
+  },
+  "license": "MIT"
+}
